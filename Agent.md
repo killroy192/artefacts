@@ -3,8 +3,8 @@
 
 You are working in a workspace with two projects:
 
-1. @/Users/Dzmitry_Lahunouski/dev/caldiy-masterclass/ - codebase;
-2. @/Users/Dzmitry_Lahunouski/dev/artefacts/ - side project, for preparing artifacts fir ai-driven development;
+1. caldiy-masterclass - codebase;
+2. artefacts - side project, for preparing artifacts fir ai-driven development;
 
 ## Artifacts Repo conventions
 
