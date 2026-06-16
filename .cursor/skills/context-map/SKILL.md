@@ -31,15 +31,31 @@ Produce **artefact only** — a structured context map. Another agent uses these
 
 ## Workflow
 
-Using the spec and approved plan, inspect the relevant onboarding flow.
+Using the feature name, inspect the relevant resources and produce a context map using the following structure:
 
-Map:
+**Hot context** — directly required for the feature right now:
 
-- files involved
-- current loading behavior
-- data flow
-- likely change points
-- files not to touch
-- missing context
-- risky assumptions
-- smallest safe implementation boundary
+* Current spec and plan
+* Active files
+* Logs/screenshots
+
+**Warm context** — reusable guidance relevant to the feature:
+
+* AGENTS.md / rules / skills
+* Team conventions
+* ADRs
+* Known constraints
+
+**Cold context** — investigate only if needed:
+
+* Relevant repo areas
+* Documentation
+* Past PRs
+* Monitoring/logs
+* Story tickets
+
+**Resources to ignore:**
+
+* Deprecated documentation
+* Generated files
+* Unrelated modules
