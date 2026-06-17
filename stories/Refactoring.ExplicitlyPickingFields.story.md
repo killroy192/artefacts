@@ -3,20 +3,18 @@ URL: https://github.com/calcom/cal.diy/issues/28923
 
 ## Issue Summary
 
-There is a potential data exposure vulnerability in 
-packages/app-store/_utils/getConnectedApps.ts.
+There is a potential data exposure vulnerability in packages/app-store/_utils/getConnectedApps.ts.
 
 The current implementation uses object destructuring with a deny-list approach:
 
 ({ credentials: _, credential, key: _2, ...app })
 
-While specific sensitive fields are removed, the remaining properties are 
-blindly spread using ...app into the API response.
+While specific sensitive fields are removed, the remaining properties are blindly spread using app into the API response.
 
 This approach is unsafe because:
 
 - It implicitly exposes all non-excluded fields
-- Any new fields added in the future (e.g., internal configs, metadata) 
+- Any new fields added in the future (e.g., internal configs, metadata)
   will be automatically leaked
 - It violates the principle of explicit data control in API design
 
@@ -35,15 +33,9 @@ Additionally, there is an internal developer note highlighting this issue:
 
 3. Observe the mapping logic:
    - Sensitive fields are excluded using destructuring
-   - Remaining object is spread via ...app into the response
+   - Remaining object is spread into the response
 
-4. Add any new internal property in:
-   - appStoreMetadata, or
-   - database schema
-
-5. Call getConnectedApps API
-
--> The newly added internal field will be exposed to the frontend unintentionally
+4. Call getConnectedApps API -> All fields will be exposed to the frontend unintentionally
 
 ---
 
@@ -57,8 +49,7 @@ Additionally, there is an internal developer note highlighting this issue:
 
 ## Expected Result
 
-The API should follow a strict allow-list approach, where only explicitly 
-defined safe fields are returned.
+The API should follow a strict allow-list approach, where only explicitly defined safe fields are returned.
 
 Example:
 
@@ -84,29 +75,3 @@ This ensures:
 - Lines: 149–151
 - Component: Backend utilities / tRPC layer
 - Environment: Backend logic issue (browser independent)
-
----
-
-## Evidence
-
-Relevant code snippet:
-
-// TODO: Refactor this to pick up only needed fields and prevent more leaking
-let apps = await Promise.all(
-  enabledApps.map(async ({ credentials: _, credential, key: _2 /* don't leak to frontend */, ...app }) => {
-
-This confirms:
-
-- Known internal concern (via TODO)
-- Current reliance on spread operator after partial filtering
-
----
-
-## Impact
-
-- Risk of data leakage to frontend clients
-- Possible exposure of:
-  - internal configuration
-  - metadata
-  - future sensitive fields
-- Violates secure API design principles (least privilege)

@@ -1,10 +1,10 @@
 ---
 name: generate-context-map
-description: Turns a context map and implementation plan into a structured verification plan. Use when the user asks to generate a verification plan, write a verification plan or create artefacts for AI-assisted implementation.
+description: Turns a spec, context map and implementation plan into a structured verification plan. Use when the user asks to generate a verification plan, write a verification plan or create artefacts for AI-assisted implementation.
 disable-model-invocation: true
 ---
 
-# Generate Spec
+# Generate Artefact
 
 Produce **artefact only** — verification plan. Verification agent will rely on this plan during verification stage.
 
@@ -41,8 +41,6 @@ Produce **artefact only** — verification plan. Verification agent will rely on
 ---
 
 ## Workflow
-
-Given spec and plan:
 
 1. Map each acceptance criterion to a verification method.
 2. Identify existing tests and checks that should be reused.

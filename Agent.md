@@ -4,7 +4,7 @@
 You are working in a workspace with two projects:
 
 1. caldiy-masterclass - codebase;
-2. artefacts - side project, for preparing artifacts fir ai-driven development;
+2. artefacts - side project, for preparing artifacts for ai-driven development;
 
 ## Artifacts Repo conventions
 
