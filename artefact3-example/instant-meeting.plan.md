@@ -1,7 +1,8 @@
 # Start Instant Meeting — Implementation Plan
 
-**Spec:** [`artefacts/specs/feature-start-instant-meeting.spec.md`](../specs/feature-start-instant-meeting.spec.md)
-**Context map:** [`artefacts/context-maps/feature-start-instant-meeting.contextmap.md`](../context-maps/feature-start-instant-meeting.contextmap.md)
+**Feature slug:** `instant-meeting` 
+**Spec:** [`artefacts/artefact3-example/instant-meeting.spec.md`](./instant-meeting.spec.md)  
+**Context map:** [`artefacts/artefact3-example/instant-meeting.contextmap.md`](./instant-meeting.contextmap.md)
 
 ---
 

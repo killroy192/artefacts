@@ -1,9 +1,8 @@
 # Context Map: Start Instant Meeting (Host-Initiated)
 
-**Feature slug:** `feature-start-instant-meeting`  
+**Feature slug:** `instant-meeting`  
 **Story:** [`Feature.StartInstantMeeting.Story.md`](../stories/Feature.StartInstantMeeting.Story.md)  
-**Spec:** [`feature-start-instant-meeting.spec.md`](../specs/feature-start-instant-meeting.spec.md)  
-**Plan:** _Not yet produced_ (`artefacts/plans/` is empty)
+**Spec:** [`artefacts/artefact3-example/instant-meeting.spec.md`](./instant-meeting.spec.md)  
 
 ---
 

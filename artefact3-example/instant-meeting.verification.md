@@ -1,9 +1,9 @@
 # Verification Plan: Start Instant Meeting
 
-**Feature slug:** `feature-start-instant-meeting`  
-**Spec:** [`artefacts/specs/feature-start-instant-meeting.spec.md`](../specs/feature-start-instant-meeting.spec.md)  
-**Plan:** [`artefacts/plans/feature-start-instant-meeting.plan.md`](../plans/feature-start-instant-meeting.plan.md)  
-**Context map:** [`artefacts/context-maps/feature-start-instant-meeting.contextmap.md`](../context-maps/feature-start-instant-meeting.contextmap.md)
+**Feature slug:** `instant-meeting`  
+**Spec:** [`artefacts/artefact3-example/instant-meeting.spec.md`](./instant-meeting.spec.md)  
+**Plan:** [`artefacts/artefact3-example/instant-meeting.plan.md`](./instant-meeting.plan.md)  
+**Context map:** [`artefacts/artefact3-example/instant-meeting.contextmap.md`](./instant-meeting.contextmap.md)
 
 ---
 

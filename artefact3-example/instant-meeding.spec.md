@@ -1,7 +1,7 @@
 # Spec: Start Instant Meeting (Host-Initiated)
 
-**Story:** [Feature.StartInstantMeeting.Story.md](../stories/Feature.StartInstantMeeting.Story.md)  
-**Slug:** `feature-start-instant-meeting`
+**Feature slug:** `instant-meeting`  
+**Story:** [`Feature.StartInstantMeeting.Story.md`](../stories/Feature.StartInstantMeeting.Story.md)  
 
 ---
 
