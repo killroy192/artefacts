@@ -29,7 +29,7 @@ Produce **artefact only** — verification plan. Verification agent will rely on
 
 ---
 
-## Verification Gates
+## Verification Gates (Dimensions)
 
 1. Spec compliance - Does the diff satisfy every acceptance criterion?
 2. Scope control - Is anything included that was not requested?
@@ -44,7 +44,9 @@ Produce **artefact only** — verification plan. Verification agent will rely on
 
 1. Map each acceptance criterion to a verification method.
 2. Identify existing tests and checks that should be reused.
-3. Propose the smallest new failing test if coverage is missing.
+3. Propose what to cover with tests if coverage is missing.
 4. Identify typecheck, lint, build and smoke commands from repository files.
 5. Flag acceptance criteria that are not directly verifiable yet.
-6. Provide action list how each verification gate will be passed (validated). At the end we want to have dimension - score (0-2) table.
+6. Provide action list how each verification gate will be passed (validated).
+7. At the end, do validation and provide evaluation score according to the dimensions (score 0-2).
+8. Save results.
