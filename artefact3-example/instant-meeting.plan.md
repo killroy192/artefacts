@@ -60,7 +60,7 @@
 
 ## Implementation Steps
 
-## Test-First Policy (mandatory)
+### Test-First Policy (mandatory)
 
 For every implementation step below where behavior is clear, use strict red → green:
 
