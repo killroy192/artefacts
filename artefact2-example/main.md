@@ -5,7 +5,7 @@
 
 ---
 
-## 1. [verifier subagent](.cursor/agents/verifier.md)
+## 1. [verifier subagent](https://github.com/killroy192/caldiy-masterclass/.cursor/agents/verifier.md)
 
 **What the purpose of having this subagent**
 
@@ -40,7 +40,7 @@
 
 ---
 
-## 2. [MCP config](.cursor/mcp.json) + [miro-mcp skill](../.cursor/skills/miro/SKILL.md)
+## 2. [MCP config](https://github.com/killroy192/caldiy-masterclass/.cursor/mcp.json) + [miro-mcp skill](https://github.com/killroy192/caldiy-masterclass/.cursor/skills/miro/SKILL.md)
 
 **Why we need this MCP**
 
@@ -52,22 +52,15 @@
 
 | Topic | Practice |
 |-------|----------|
-| **Config location** | Project-level `.cursor/mcp.json` in `artefacts` repo (team-shareable via git). |
 | **Description field** | Each server entry includes a `description` documenting purpose and OAuth requirement — aids review even though Cursor primarily uses `url` / `command`. |
 | **Auth** | Official Miro server uses OAuth at `https://mcp.miro.com/` — no tokens in git; complete OAuth in Cursor after clone. |
 | **Duplicate servers** | Do **not** add manual `mcp.json` entry if the Miro Cursor Marketplace plugin is already installed — duplicate tools and auth sessions. |
 | **Tool approval** | Keep default approval for write tools (`diagram_create`, `doc_update`, `table_sync_rows`); readonly exploration can be allowlisted per team policy. |
 | **Secrets** | Never commit `MIRO_OAUTH_TOKEN` or API keys; use `${env:...}` interpolation only in local overrides, not in committed config. |
 
-**MCP output (example capabilities used)**
+MCP output: ./mcp-output.jpg
 
-- `context_explore` / `context_get` — summarize an existing architecture board before writing a context map.
-- `diagram_create` — flowchart for booking/instant-meeting flows during artefact3 planning.
-- `doc_create` / `doc_update` — workshop notes on a shared board linked from artefact4.
-
-**Agent chat log**
-
-
+Agent chat log: ./mcp.chatlog.md
 
 **Challenges**
 
