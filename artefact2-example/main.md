@@ -5,7 +5,7 @@
 
 ---
 
-## 1. [verifier subagent](https://github.com/killroy192/caldiy-masterclass/.cursor/agents/verifier.md)
+## 1. [verifier subagent](https://github.com/killroy192/caldiy-masterclass/blob/main/.cursor/agents/verifier.md)
 
 **What the purpose of having this subagent**
 
@@ -40,7 +40,7 @@
 
 ---
 
-## 2. [MCP config](https://github.com/killroy192/caldiy-masterclass/.cursor/mcp.json) + [miro-mcp skill](https://github.com/killroy192/caldiy-masterclass/.cursor/skills/miro/SKILL.md)
+## 2. [MCP config](https://github.com/killroy192/caldiy-masterclass/blob/main/.cursor/mcp.json) + [miro-mcp skill](https://github.com/killroy192/caldiy-masterclass/blob/main/.cursor/skills/miro/SKILL.md)
 
 **Why we need this MCP**
 
